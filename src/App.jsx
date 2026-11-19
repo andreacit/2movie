@@ -26,7 +26,7 @@ export default function App() {
         <div>
           <strong>Andrea Citlalli Andrade Rico</strong>
           <p>Desarrollo de aplicaciones web en la nube y móviles · Profesor Zeus Emanuel Gutiérrez Cobian</p>
-          <p>CUCEI · Universidad de Guadalajara · 2026B</p>
+          <p>CUCEI · Universidad de Guadalajara · 2026B · Noviembre de 2026</p>
         </div>
       </footer>
     </BrowserRouter>
