@@ -70,7 +70,7 @@ Al abrir 2movie aparece una cuadrícula de películas. Al seleccionar una tarjet
 ## Repositorio y despliegue
 
 - GitHub: [andreacit/2movie](https://github.com/andreacit/2movie).
-- Netlify: enlace pendiente de la primera publicación.
+- Netlify: [2movie](https://2-movie.netlify.app/).
 
 Para desplegar, importa el repositorio en Netlify, selecciona `main` como rama de producción y agrega `VITE_TMDB_API_KEY` en las variables de entorno de compilación. El archivo `netlify.toml` fija el comando de compilación y el directorio `dist`. La regla de `public/_redirects` permite abrir o recargar una ficha por su URL directa.
 
