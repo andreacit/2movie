@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import AppRouter from './routers/AppRouter';
+import cuceiLogo from './img/cucei.svg';
 
 export default function App() {
   return (
@@ -10,7 +11,9 @@ export default function App() {
           <span>2</span>movie
         </Link>
         <nav aria-label="Navegación principal">
-          <Link to="/">Catálogo</Link>
+          <Link to="/" aria-label="Volver" title="Volver">
+            <span aria-hidden="true">🎥</span>
+          </Link>
         </nav>
       </header>
 
@@ -19,9 +22,12 @@ export default function App() {
       </main>
 
       <footer className="site-footer">
-        <strong>Andrea Citlalli Andrade Rico</strong>
-        <p>Desarrollo de aplicaciones web en la nube y móviles · Profesor Zeus Emanuel Gutiérrez Cobian</p>
-        <p>CUCEI · Universidad de Guadalajara · 2026B</p>
+        <img className="site-footer-logo" src={cuceiLogo} alt="Escudo de CUCEI" />
+        <div>
+          <strong>Andrea Citlalli Andrade Rico</strong>
+          <p>Desarrollo de aplicaciones web en la nube y móviles · Profesor Zeus Emanuel Gutiérrez Cobian</p>
+          <p>CUCEI · Universidad de Guadalajara · 2026B</p>
+        </div>
       </footer>
     </BrowserRouter>
   );
